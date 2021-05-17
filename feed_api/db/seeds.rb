@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Review.create([
+    {customer_name: "Mary", content: "Example Text", date: "4/26/2021"}
+])
+
+Service.create([{
+    name: "installation", description: "installed equipment", cost: 120
+}])
