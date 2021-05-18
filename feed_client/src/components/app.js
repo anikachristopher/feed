@@ -1,9 +1,10 @@
 import React from 'react';
 
+import ReviewsContainer from './ReviewsContainer' //mounting
 const App = () => {
     return (
         <div>
-            WE'RE REACTING BIH!
+            <ReviewsContainer />
         </div>
     );
 };
