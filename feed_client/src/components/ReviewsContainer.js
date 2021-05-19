@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
 
+import { getAllReviews } from '../actions/reviewsActions'
+//create form and mount it here
 class ReviewsContainer extends Component {
+
+    componentDidMount(){
+        this.props.getAllReviews()
+    }
+
     render() {
         return (
             <div>
@@ -10,4 +18,4 @@ class ReviewsContainer extends Component {
     }
 }
 
-export default ReviewsContainer;
+export default connect(null, { getAllReviews })(ReviewsContainer);

@@ -245,3 +245,26 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 28ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 2570)
 
 
+Started GET "/reviews" for 127.0.0.1 at 2021-05-18 21:39:18 -0400
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 6.4ms | ActiveRecord: 1.1ms | Allocations: 7153)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-18 21:39:32 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.4ms | Allocations: 737)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-18 21:39:55 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 737)
+
+
