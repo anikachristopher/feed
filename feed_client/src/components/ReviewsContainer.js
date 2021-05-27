@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 
 import { getAllReviews } from '../actions/reviewsActions'
+import ReviewsForm from './ReviewsForm'
 //create form and mount it here
 class ReviewsContainer extends Component {
 
@@ -12,7 +13,8 @@ class ReviewsContainer extends Component {
     render() {
         return (
             <div>
-                MALIK IS DOING A CROSSWORD PUZZLE IN SHORTS!
+                Create a Review
+                <ReviewsForm />
             </div>
         );
     }
