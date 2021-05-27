@@ -18,6 +18,6 @@ export const createReview = (review) => {
             headers: { 'Content-Type': 'application/json'}
         })
         .then(resp => resp.json())
-        .then(review => dispatch({ type: 'ADD_REVIEW', payload: review}))
+        .then(review => dispatch({ type: 'CREATE_REVIEW', payload: review}))
     }
 }
