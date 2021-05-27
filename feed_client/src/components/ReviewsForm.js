@@ -3,6 +3,9 @@
 //add a button to connect the review form to the service and open a review modal
 
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
+
+import { createReview} from '../actions/reviewsActions'
 
 class ReviewsForm extends Component {
 
@@ -19,9 +22,14 @@ class ReviewsForm extends Component {
           [name]: value
       })
   }
+
+  handleSubmit = e => {
+    e.preventDefault()
+    this.props.createReview(this.state)
+}
     render() {
         return (
-          <form>
+          <form onSubmit={this.handleSubmit}>
             <label>Name:</label>
             <input type='text' value={this.state.customer_name} onChange={this.handleChange} name="customer_name"/>
             <br />
@@ -37,6 +45,6 @@ class ReviewsForm extends Component {
   }
 }
 
-export default ReviewsForm;
+export default connect(null, { createReview }) (ReviewsForm);
 
 
