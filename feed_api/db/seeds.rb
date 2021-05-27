@@ -13,3 +13,5 @@ Review.create([
 Service.create([{
     name: "installation", description: "installed equipment", cost: 120
 }])
+
+# add more seed data for services. HArd code all the services since we're not adding a new one.
