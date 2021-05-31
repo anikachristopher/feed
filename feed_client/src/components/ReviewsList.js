@@ -17,10 +17,13 @@ const ReviewsList = ({ reviews }) => {
 
 };
 
-//LIST IS NOT DISPLAYING ON THE SCREEN OR WHEN YOU ADD A REVIEW - 5/30/21
+//LIST IS NOT DISPLAYING ON THE SCREEN OR WHEN YOU ADD A REVIEW - 5/30/21. Working now.
 
 const mapStateToProps = state => {
     return {reviews: state.reviews}
 }
 
 export default connect(mapStateToProps)(ReviewsList);
+
+//done
+//not a stateless component
