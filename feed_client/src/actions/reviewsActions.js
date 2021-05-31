@@ -1,12 +1,16 @@
 export const getAllReviews = () => {
     return (dispatch) => {
         fetch('http://127.0.0.1:3000/reviews')
-        .then(resp => resp.json())
-        .then(reviews => dispatch({ type: 'FETCH_REVIEWS', payload: reviews}))
-    }
-
+        .then((resp) => {
+            resp.json();
+        })
+        .then((reviews) => {
+            console.log(reviews);
+        // dispatch({ type: 'GET_ALL_REVIEWS', payload: reviews});
+        }
+        )}
 }
-
+    
 
 //build CRUD functionality here - create and delete (maybe update)
 
