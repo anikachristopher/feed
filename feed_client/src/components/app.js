@@ -1,10 +1,13 @@
 import React from 'react';
 
-import ReviewsContainer from './ReviewsContainer' //mounting
+import Router from './Router'
+import ReviewsContainer from './ReviewsContainer'
+
 const App = () => {
     return (
         <div>
-            <ReviewsContainer />
+           <ReviewsContainer />
+           <Router />
         </div>
     );
 };
