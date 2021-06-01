@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Review.create([
-    {customer_name: "Mary", content: "Example Text", date: "4/26/2021"}
+    {service_name: "Installation", customer_name: "Mary", content: "Example Text", date: "4/26/2021"}
 ])
 
 Service.create([

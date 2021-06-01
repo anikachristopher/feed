@@ -1741,3 +1741,3266 @@ Processing by ReviewsController#index as */*
 Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 738)
 
 
+Started POST "/reviews" for 127.0.0.1 at 2021-05-31 09:50:37 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"customer_name"=>"Anika Morris-Christopher", "content"=>"Fun stuff!", "date"=>"4/1/21", "review"=>{"customer_name"=>"Anika Morris-Christopher", "content"=>"Fun stuff!", "date"=>"4/1/21"}}
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (1.3ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_name", "Anika Morris-Christopher"], ["content", "Fun stuff!"], ["date", "4/1/21"], ["created_at", "2021-05-31 13:50:37.821176"], ["updated_at", "2021-05-31 13:50:37.821176"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 21ms (Views: 2.9ms | ActiveRecord: 2.7ms | Allocations: 2066)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 10:06:44 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 12.6ms | ActiveRecord: 1.3ms | Allocations: 1451)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 10:19:52 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 12.1ms | ActiveRecord: 1.2ms | Allocations: 1432)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 10:19:59 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.3ms | Allocations: 853)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 10:33:31 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 1.2ms | Allocations: 1433)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 10:33:35 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 855)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 10:33:37 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.4ms | Allocations: 853)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 10:33:44 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 853)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 10:33:51 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 853)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 10:34:29 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 853)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 10:34:41 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.6ms | Allocations: 853)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 10:34:46 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 853)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2021-05-31 10:35:11 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"customer_name"=>"", "content"=>"", "date"=>"", "review"=>{"customer_name"=>"", "content"=>"", "date"=>""}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (0.5ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_name", ""], ["content", ""], ["date", ""], ["created_at", "2021-05-31 14:35:11.988996"], ["updated_at", "2021-05-31 14:35:11.988996"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 12ms (Views: 1.3ms | ActiveRecord: 3.0ms | Allocations: 1784)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2021-05-31 10:35:21 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"customer_name"=>"John", "content"=>"Test", "date"=>"Does", "review"=>{"customer_name"=>"John", "content"=>"Test", "date"=>"Does"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (0.9ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_name", "John"], ["content", "Test"], ["date", "Does"], ["created_at", "2021-05-31 14:35:21.406738"], ["updated_at", "2021-05-31 14:35:21.406738"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 7ms (Views: 0.4ms | ActiveRecord: 2.1ms | Allocations: 1785)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 10:35:27 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 10:36:30 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 10:36:36 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 10:37:58 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 10:38:00 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 10:38:02 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.5ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 10:38:07 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:04:35 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 21ms (Views: 17.5ms | ActiveRecord: 1.5ms | Allocations: 1697)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:04:36 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:07:21 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:07:28 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:08:49 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:08:53 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:08:57 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:09:14 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:09:33 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:09:43 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:09:48 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:11:02 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:11:06 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.1ms | Allocations: 1119)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:11:31 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:11:43 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:13:45 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:13:49 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:15:42 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:19:05 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:19:08 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:25:35 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (1.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 2.8ms | Allocations: 1697)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:27:14 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:54:24 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 20ms (Views: 16.5ms | ActiveRecord: 2.0ms | Allocations: 1698)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:54:27 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.2ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:55:37 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:56:39 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.1ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:56:57 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.1ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 11:58:17 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 12:03:41 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 21ms (Views: 15.4ms | ActiveRecord: 0.8ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 12:16:29 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 14.4ms | ActiveRecord: 1.7ms | Allocations: 1698)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 12:22:07 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 12:22:11 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.5ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 12:22:18 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.2ms | Allocations: 1118)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 12:22:23 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.2ms | Allocations: 1119)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2021-05-31 12:22:40 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"customer_name"=>"Anika Morris-Christopher", "content"=>"test", "date"=>"4/1/21", "review"=>{"customer_name"=>"Anika Morris-Christopher", "content"=>"test", "date"=>"4/1/21"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (0.6ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_name", "Anika Morris-Christopher"], ["content", "test"], ["date", "4/1/21"], ["created_at", "2021-05-31 16:22:40.486187"], ["updated_at", "2021-05-31 16:22:40.486187"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 9ms (Views: 0.9ms | ActiveRecord: 1.8ms | Allocations: 1783)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 12:22:49 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1252)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2021-05-31 12:23:05 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"customer_name"=>"Anika Morris-Christopher", "content"=>"test2", "date"=>"6/7/21", "review"=>{"customer_name"=>"Anika Morris-Christopher", "content"=>"test2", "date"=>"6/7/21"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (0.5ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_name", "Anika Morris-Christopher"], ["content", "test2"], ["date", "6/7/21"], ["created_at", "2021-05-31 16:23:05.580108"], ["updated_at", "2021-05-31 16:23:05.580108"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 8ms (Views: 0.7ms | ActiveRecord: 1.8ms | Allocations: 1783)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 12:23:12 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms | Allocations: 1386)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 13:12:49 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 14.1ms | ActiveRecord: 1.2ms | Allocations: 1965)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 13:34:49 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 26ms (Views: 20.8ms | ActiveRecord: 1.6ms | Allocations: 1965)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 13:35:27 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1386)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 13:36:51 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 1386)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:01:14 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (1.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 28ms (Views: 20.6ms | ActiveRecord: 2.5ms | Allocations: 1965)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:01:28 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.4ms | Allocations: 1386)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:01:43 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.4ms | Allocations: 1386)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:02:11 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.3ms | Allocations: 1386)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:05:27 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (1.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 1.6ms | Allocations: 1386)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:05:35 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 1386)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2021-05-31 14:05:50 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"customer_name"=>"Anika Morris-Christopher", "content"=>"test", "date"=>"4/8/21", "review"=>{"customer_name"=>"Anika Morris-Christopher", "content"=>"test", "date"=>"4/8/21"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (3.0ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_name", "Anika Morris-Christopher"], ["content", "test"], ["date", "4/8/21"], ["created_at", "2021-05-31 18:05:50.537288"], ["updated_at", "2021-05-31 18:05:50.537288"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 11ms (Views: 0.9ms | ActiveRecord: 3.9ms | Allocations: 1787)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:05:59 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:06:16 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:12:15 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 1.7ms | Allocations: 2099)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:12:43 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:16:37 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 21ms (Views: 15.9ms | ActiveRecord: 1.0ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:16:49 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:17:59 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:18:05 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:21:09 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 21ms (Views: 16.1ms | ActiveRecord: 0.9ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:30:42 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 26ms (Views: 22.5ms | ActiveRecord: 4.8ms | Allocations: 2099)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:31:26 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.9ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:31:33 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 1.0ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:31:41 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:31:46 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:32:08 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:33:23 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:33:35 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:33:49 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.8ms | Allocations: 1521)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:33:50 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:34:00 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:34:24 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (2.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 12.8ms | ActiveRecord: 2.0ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:34:28 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:36:44 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (3.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 47ms (Views: 28.5ms | ActiveRecord: 3.8ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:36:45 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:36:55 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:36:58 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:37:05 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:43:09 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 31ms (Views: 26.8ms | ActiveRecord: 2.6ms | Allocations: 2099)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:43:43 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (1.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 1.7ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:43:47 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:44:02 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:44:08 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:44:20 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:44:31 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:44:54 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:44:55 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:45:19 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:45:30 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:45:31 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:45:35 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.1ms | Allocations: 1521)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:45:42 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:45:54 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:45:56 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:46:00 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:46:02 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:46:08 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:50:01 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 8.6ms | ActiveRecord: 0.5ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:55:41 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:55:50 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:55:56 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:56:17 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:56:43 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:56:46 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:56:48 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:56:52 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:56:56 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:57:05 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:57:11 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.1ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:57:13 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:57:16 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:57:21 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.1ms | Allocations: 1521)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:57:29 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:57:39 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:57:41 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:57:45 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:58:02 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:58:18 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:59:19 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 14:59:59 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:00:07 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:01:50 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 10.9ms | ActiveRecord: 0.8ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:01:53 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:01:58 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:02:19 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.5ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:03:32 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:03:36 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:03:43 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:03:47 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:03:55 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:04:18 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.1ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:04:22 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:04:33 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:04:34 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 36ms (Views: 36.0ms | ActiveRecord: 0.1ms | Allocations: 1521)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:04:37 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:04:58 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:05:01 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:05:03 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:05:09 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:05:10 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:05:13 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:05:45 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:05:59 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:06:19 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:06:26 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:06:33 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:06:41 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:06:50 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:09:08 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 13.6ms | ActiveRecord: 0.6ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:09:13 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:09:32 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:09:49 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:10:39 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 0.5ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:11:07 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:11:15 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:11:25 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 77ms (Views: 76.2ms | ActiveRecord: 0.3ms | Allocations: 1521)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:11:31 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:11:37 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:11:43 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.1ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:11:52 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:12:31 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:12:32 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:12:37 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:12:40 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:12:55 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.1ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:12:56 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:12:58 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:13:05 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:28:11 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 20ms (Views: 16.7ms | ActiveRecord: 2.8ms | Allocations: 2099)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:28:16 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:28:18 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:28:33 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:28:50 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.8ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:29:00 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:32:48 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 11.3ms | ActiveRecord: 0.6ms | Allocations: 1521)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:32:58 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.6ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:33:03 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 1521)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:33:13 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:33:27 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.1ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:33:31 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:35:12 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 1.0ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 15:42:08 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 14.3ms | ActiveRecord: 1.5ms | Allocations: 2099)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 16:00:50 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 20ms (Views: 15.5ms | ActiveRecord: 2.3ms | Allocations: 2099)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 16:08:56 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 19ms (Views: 15.2ms | ActiveRecord: 1.4ms | Allocations: 2099)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 16:09:51 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.9ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 16:09:56 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 16:10:00 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 16:13:43 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 22ms (Views: 17.6ms | ActiveRecord: 0.5ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 16:16:18 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 16:18:10 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.9ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 16:27:47 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 40ms (Views: 35.4ms | ActiveRecord: 2.0ms | Allocations: 2099)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 16:33:29 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (1.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 20ms (Views: 15.7ms | ActiveRecord: 1.5ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 16:34:01 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 16:35:05 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1521)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 16:35:08 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 16:40:25 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 16:41:16 -0400
+Processing by ReviewsController#index as HTML
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 1516)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 17:03:19 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 31ms (Views: 27.1ms | ActiveRecord: 3.5ms | Allocations: 2099)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 17:03:24 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 17:03:52 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 17:03:58 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 17:04:05 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.9ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 17:07:40 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 11.9ms | ActiveRecord: 1.0ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 17:07:43 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 17:14:48 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (2.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 48ms (Views: 44.6ms | ActiveRecord: 5.1ms | Allocations: 2099)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 17:38:45 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (1.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 43ms (Views: 38.6ms | ActiveRecord: 4.6ms | Allocations: 2099)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:53:06 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 22ms (Views: 18.3ms | ActiveRecord: 1.4ms | Allocations: 2100)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:53:19 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (1.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 1.1ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:54:53 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 24ms (Views: 19.5ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:54:54 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.6ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:55:07 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:55:11 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:55:21 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.1ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:55:31 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:55:32 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:55:36 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:55:39 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:55:41 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:55:42 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:55:45 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:56:02 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.1ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:56:05 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:56:10 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:56:12 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:56:19 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:56:30 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:56:31 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:57:22 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.3ms | Allocations: 1521)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:57:24 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:57:25 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:59:30 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (1.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 13.2ms | ActiveRecord: 1.5ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:59:37 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:59:39 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:59:46 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (1.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 1.1ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:59:50 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 18:59:57 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:00:02 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:00:03 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:00:04 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:00:06 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:00:07 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:02:39 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 12.7ms | ActiveRecord: 0.9ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:04:21 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:05:45 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:06:06 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.1ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:06:08 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.7ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:08:30 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 27ms (Views: 21.3ms | ActiveRecord: 0.9ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:08:38 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:08:43 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 41ms (Views: 40.6ms | ActiveRecord: 0.2ms | Allocations: 1521)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:08:45 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:08:46 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:08:50 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:08:51 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:08:54 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:13:49 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 1521)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:13:50 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:13:52 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:13:53 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:13:55 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:13:56 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:13:57 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (1.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 1.5ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:14:02 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:16:49 -0400
+Processing by ReviewsController#index as HTML
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 1516)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:17:13 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:29:07 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 29ms (Views: 25.6ms | ActiveRecord: 3.9ms | Allocations: 2099)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:29:09 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:29:10 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.9ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:29:11 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:29:12 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.3ms | Allocations: 1521)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:29:16 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1521)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:29:17 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.6ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:29:23 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.9ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:29:44 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:29:52 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:29:57 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:30:16 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:30:54 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:31:17 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:31:38 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:36:24 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:38:10 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.3ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:38:24 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:39:05 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:39:34 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:42:04 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.1ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:42:08 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:46:59 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 11.1ms | ActiveRecord: 0.8ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:51:37 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.1ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:51:56 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.4ms | Allocations: 1520)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:52:21 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 62ms (Views: 60.9ms | ActiveRecord: 0.2ms | Allocations: 1521)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:53:08 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2021-05-31 19:53:16 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"customer_name"=>"Malik", "content"=>"test", "date"=>"4/2/21", "review"=>{"customer_name"=>"Malik", "content"=>"test", "date"=>"4/2/21"}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (3.2ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_name", "Malik"], ["content", "test"], ["date", "4/2/21"], ["created_at", "2021-05-31 23:53:16.680855"], ["updated_at", "2021-05-31 23:53:16.680855"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 36ms (Views: 4.7ms | ActiveRecord: 5.3ms | Allocations: 1781)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:54:17 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (3.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 32ms (Views: 24.4ms | ActiveRecord: 3.3ms | Allocations: 1652)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2021-05-31 19:54:27 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"customer_name"=>"John", "content"=>"test", "date"=>"6/7/21", "review"=>{"customer_name"=>"John", "content"=>"test", "date"=>"6/7/21"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (1.1ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_name", "John"], ["content", "test"], ["date", "6/7/21"], ["created_at", "2021-05-31 23:54:27.384190"], ["updated_at", "2021-05-31 23:54:27.384190"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 8ms (Views: 0.4ms | ActiveRecord: 3.0ms | Allocations: 1781)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:54:42 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms | Allocations: 1784)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2021-05-31 19:54:57 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"customer_name"=>"Malik", "content"=>"test", "date"=>"4/2/21", "review"=>{"customer_name"=>"Malik", "content"=>"test", "date"=>"4/2/21"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_name", "Malik"], ["content", "test"], ["date", "4/2/21"], ["created_at", "2021-05-31 23:54:57.172819"], ["updated_at", "2021-05-31 23:54:57.172819"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 6ms (Views: 1.1ms | ActiveRecord: 1.5ms | Allocations: 1781)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:57:53 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.6ms | Allocations: 1916)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:58:31 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms | Allocations: 1916)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:59:02 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1916)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:59:05 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.3ms | Allocations: 1916)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:59:39 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.1ms | Allocations: 1916)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 19:59:44 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.4ms | Allocations: 1916)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 20:00:45 -0400
+Processing by ReviewsController#index as HTML
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.3ms | Allocations: 1912)
+
+
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddServiceToReviews (20210601000617)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "reviews" ADD "service" text[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210601000617"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveServiceFromReviews (20210601000759)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "areviews" ("id" integer NOT NULL PRIMARY KEY, "customer_name" varchar DEFAULT NULL, "content" varchar DEFAULT NULL, "date" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "service" text DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "areviews" ("id","customer_name","content","date","created_at","updated_at","service")
+                     SELECT "id","customer_name","content","date","created_at","updated_at","service" FROM "reviews"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "reviews"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" integer NOT NULL PRIMARY KEY, "customer_name" varchar DEFAULT NULL, "content" varchar DEFAULT NULL, "date" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "reviews" ("id","customer_name","content","date","created_at","updated_at")
+                     SELECT "id","customer_name","content","date","created_at","updated_at" FROM "areviews"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "areviews"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210601000759"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddServiceToReviews (20210601000847)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "reviews" ADD "service" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210601000847"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReview Create (0.8ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at", "service") VALUES (?, ?, ?, ?, ?, ?)[0m  [["customer_name", "Mary"], ["content", "Example Text"], ["date", "4/26/2021"], ["created_at", "2021-06-01 00:09:26.605891"], ["updated_at", "2021-06-01 00:09:26.605891"], ["service", "Installation"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (1.0ms)[0m  [1m[32mINSERT INTO "services" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Equipment Installation"], ["description", "Need it installed? We have the tools to complete your intallation qucikly, professionally, and less than our competitor!"], ["created_at", "2021-06-01 00:09:26.617537"], ["updated_at", "2021-06-01 00:09:26.617537"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Customer Service"], ["description", "We aim to provide the best in class customer service experience for our clients."], ["created_at", "2021-06-01 00:09:26.625613"], ["updated_at", "2021-06-01 00:09:26.625613"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (1.1ms)[0m  [1m[32mINSERT INTO "services" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Repair Service"], ["description", "We offer comprehensive repair services for all your equipment offerings"], ["created_at", "2021-06-01 00:09:26.635859"], ["updated_at", "2021-06-01 00:09:26.635859"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "reviews"[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "customer_name" varchar, "content" varchar, "date" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "service" varchar)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "services"[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "services" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210601000847)[0m
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210516200533),
+(20210516200623),
+(20210531133939),
+(20210601000759);
+
+[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-06-01 00:09:36.511175"], ["updated_at", "2021-06-01 00:09:36.511175"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "55a48dc28a94377503fc7c79e3490643eb3b4376"], ["created_at", "2021-06-01 00:09:36.522194"], ["updated_at", "2021-06-01 00:09:36.522194"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "reviews"[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "customer_name" varchar, "content" varchar, "date" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "service" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "services"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "services" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210601000847)[0m
+  [1m[35m (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210516200533),
+(20210516200623),
+(20210531133939),
+(20210601000759);
+
+[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-06-01 00:09:36.543196"], ["updated_at", "2021-06-01 00:09:36.543196"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2021-06-01 00:09:36.548131"], ["key", "environment"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "55a48dc28a94377503fc7c79e3490643eb3b4376"], ["created_at", "2021-06-01 00:09:36.555548"], ["updated_at", "2021-06-01 00:09:36.555548"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at", "service") VALUES (?, ?, ?, ?, ?, ?)[0m  [["customer_name", "Mary"], ["content", "Example Text"], ["date", "4/26/2021"], ["created_at", "2021-06-01 00:09:36.587156"], ["updated_at", "2021-06-01 00:09:36.587156"], ["service", "Installation"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Equipment Installation"], ["description", "Need it installed? We have the tools to complete your intallation qucikly, professionally, and less than our competitor!"], ["created_at", "2021-06-01 00:09:36.598457"], ["updated_at", "2021-06-01 00:09:36.598457"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Customer Service"], ["description", "We aim to provide the best in class customer service experience for our clients."], ["created_at", "2021-06-01 00:09:36.606254"], ["updated_at", "2021-06-01 00:09:36.606254"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Repair Service"], ["description", "We offer comprehensive repair services for all your equipment offerings"], ["created_at", "2021-06-01 00:09:36.612096"], ["updated_at", "2021-06-01 00:09:36.612096"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 20:09:54 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReviewsController#index as HTML
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 26ms (Views: 11.7ms | ActiveRecord: 4.3ms | Allocations: 7848)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 20:10:21 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 751)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 20:10:27 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 750)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2021-05-31 20:10:38 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"customer_name"=>"Anika Morris-Christopher", "content"=>"test", "date"=>"4/1/21", "review"=>{"customer_name"=>"Anika Morris-Christopher", "content"=>"test", "date"=>"4/1/21"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (1.2ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_name", "Anika Morris-Christopher"], ["content", "test"], ["date", "4/1/21"], ["created_at", "2021-06-01 00:10:38.004993"], ["updated_at", "2021-06-01 00:10:38.004993"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 9ms (Views: 0.9ms | ActiveRecord: 2.2ms | Allocations: 2073)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 20:10:43 -0400
+Processing by ReviewsController#index as HTML
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 868)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 20:15:49 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 11.1ms | ActiveRecord: 0.7ms | Allocations: 872)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 20:15:53 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms | Allocations: 874)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2021-05-31 20:16:11 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"customer_name"=>"Malik", "content"=>"testing", "date"=>"6/7/21", "review"=>{"customer_name"=>"Malik", "content"=>"testing", "date"=>"6/7/21"}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (0.5ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_name", "Malik"], ["content", "testing"], ["date", "6/7/21"], ["created_at", "2021-06-01 00:16:11.603093"], ["updated_at", "2021-06-01 00:16:11.603093"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 25ms (Views: 2.4ms | ActiveRecord: 1.8ms | Allocations: 1791)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 20:26:44 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (12.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 54ms (Views: 50.6ms | ActiveRecord: 13.6ms | Allocations: 1610)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2021-05-31 20:26:57 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"customer_name"=>"Anika", "content"=>"TEst", "date"=>"4/4/21", "service"=>"Installation", "review"=>{"customer_name"=>"Anika", "content"=>"TEst", "date"=>"4/4/21", "service"=>"Installation"}}
+[31mUnpermitted parameter: :service[0m
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (0.6ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_name", "Anika"], ["content", "TEst"], ["date", "4/4/21"], ["created_at", "2021-06-01 00:26:57.513350"], ["updated_at", "2021-06-01 00:26:57.513350"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 24ms (Views: 0.8ms | ActiveRecord: 5.0ms | Allocations: 1824)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 20:27:10 -0400
+Processing by ReviewsController#index as HTML
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 4.8ms | ActiveRecord: 0.2ms | Allocations: 1145)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 20:27:27 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.2ms | Allocations: 1149)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 20:28:10 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.2ms | Allocations: 1149)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2021-05-31 20:28:18 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"customer_name"=>"John", "content"=>"test", "date"=>"4/8/21", "service"=>"Installation", "review"=>{"customer_name"=>"John", "content"=>"test", "date"=>"4/8/21", "service"=>"Installation"}}
+[31mUnpermitted parameter: :service[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (0.8ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_name", "John"], ["content", "test"], ["date", "4/8/21"], ["created_at", "2021-06-01 00:28:18.471052"], ["updated_at", "2021-06-01 00:28:18.471052"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 14ms (Views: 0.4ms | ActiveRecord: 1.7ms | Allocations: 1822)
+
+
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "reviews"[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "customer_name" varchar, "content" varchar, "date" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "service" varchar)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "services"[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "services" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210601000847)[0m
+  [1m[35m (2.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210516200533),
+(20210516200623),
+(20210531133939),
+(20210601000759);
+
+[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-06-01 00:30:16.831483"], ["updated_at", "2021-06-01 00:30:16.831483"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "55a48dc28a94377503fc7c79e3490643eb3b4376"], ["created_at", "2021-06-01 00:30:16.839983"], ["updated_at", "2021-06-01 00:30:16.839983"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "reviews"[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "customer_name" varchar, "content" varchar, "date" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "service" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "services"[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "services" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210601000847)[0m
+  [1m[35m (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210516200533),
+(20210516200623),
+(20210531133939),
+(20210601000759);
+
+[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-06-01 00:30:16.865485"], ["updated_at", "2021-06-01 00:30:16.865485"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (1.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2021-06-01 00:30:16.871571"], ["key", "environment"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "55a48dc28a94377503fc7c79e3490643eb3b4376"], ["created_at", "2021-06-01 00:30:16.884454"], ["updated_at", "2021-06-01 00:30:16.884454"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at", "service") VALUES (?, ?, ?, ?, ?, ?)[0m  [["customer_name", "Mary"], ["content", "Example Text"], ["date", "4/26/2021"], ["created_at", "2021-06-01 00:30:16.940260"], ["updated_at", "2021-06-01 00:30:16.940260"], ["service", "Installation"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.4ms)[0m  [1m[32mINSERT INTO "services" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Equipment Installation"], ["description", "Need it installed? We have the tools to complete your intallation qucikly, professionally, and less than our competitor!"], ["created_at", "2021-06-01 00:30:16.957085"], ["updated_at", "2021-06-01 00:30:16.957085"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Customer Service"], ["description", "We aim to provide the best in class customer service experience for our clients."], ["created_at", "2021-06-01 00:30:16.963311"], ["updated_at", "2021-06-01 00:30:16.963311"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Repair Service"], ["description", "We offer comprehensive repair services for all your equipment offerings"], ["created_at", "2021-06-01 00:30:16.969948"], ["updated_at", "2021-06-01 00:30:16.969948"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 20:30:25 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReviewsController#index as HTML
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 7.3ms | ActiveRecord: 0.7ms | Allocations: 7715)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 20:30:40 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 751)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2021-05-31 20:30:51 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"customer_name"=>"Malik", "content"=>"test", "date"=>"6/7/21", "service"=>"Installation", "review"=>{"customer_name"=>"Malik", "content"=>"test", "date"=>"6/7/21", "service"=>"Installation"}}
+[31mUnpermitted parameter: :service[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (0.9ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_name", "Malik"], ["content", "test"], ["date", "6/7/21"], ["created_at", "2021-06-01 00:30:51.568003"], ["updated_at", "2021-06-01 00:30:51.568003"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 9ms (Views: 1.1ms | ActiveRecord: 2.0ms | Allocations: 2104)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 20:30:56 -0400
+Processing by ReviewsController#index as HTML
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms | Allocations: 866)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 20:32:09 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.5ms | Allocations: 870)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2021-05-31 20:32:17 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"service"=>"Installation", "customer_name"=>"Malik", "content"=>"test", "date"=>"4/2/21", "review"=>{"customer_name"=>"Malik", "content"=>"test", "date"=>"4/2/21", "service"=>"Installation"}}
+[31mUnpermitted parameter: :service[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_name", "Malik"], ["content", "test"], ["date", "4/2/21"], ["created_at", "2021-06-01 00:32:17.287594"], ["updated_at", "2021-06-01 00:32:17.287594"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 8ms (Views: 0.5ms | ActiveRecord: 1.5ms | Allocations: 1819)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveServiceFromReviews (20210601003806)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TEMPORARY TABLE "areviews" ("id" integer NOT NULL PRIMARY KEY, "customer_name" varchar DEFAULT NULL, "content" varchar DEFAULT NULL, "date" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "service" varchar DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "areviews" ("id","customer_name","content","date","created_at","updated_at","service")
+                     SELECT "id","customer_name","content","date","created_at","updated_at","service" FROM "reviews"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE "reviews"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" integer NOT NULL PRIMARY KEY, "customer_name" varchar DEFAULT NULL, "content" varchar DEFAULT NULL, "date" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "reviews" ("id","customer_name","content","date","created_at","updated_at")
+                     SELECT "id","customer_name","content","date","created_at","updated_at" FROM "areviews"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "areviews"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210601003806"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddServiceNameToReviews (20210601003945)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "reviews" ADD "service_name" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210601003945"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "reviews"[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "customer_name" varchar, "content" varchar, "date" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "service_name" varchar)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "services"[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "services" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210601003945)[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210516200533),
+(20210516200623),
+(20210531133939),
+(20210601000847),
+(20210601003806);
+
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-06-01 00:40:15.782040"], ["updated_at", "2021-06-01 00:40:15.782040"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "2948ae85f19db2f984dc91c287ab27498a3a13fd"], ["created_at", "2021-06-01 00:40:15.788199"], ["updated_at", "2021-06-01 00:40:15.788199"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "reviews"[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "customer_name" varchar, "content" varchar, "date" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "service_name" varchar)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "services"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "services" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210601003945)[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210516200533),
+(20210516200623),
+(20210531133939),
+(20210601000847),
+(20210601003806);
+
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-06-01 00:40:15.809483"], ["updated_at", "2021-06-01 00:40:15.809483"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2021-06-01 00:40:15.815052"], ["key", "environment"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "2948ae85f19db2f984dc91c287ab27498a3a13fd"], ["created_at", "2021-06-01 00:40:15.821864"], ["updated_at", "2021-06-01 00:40:15.821864"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReview Create (0.8ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at", "service_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["customer_name", "Mary"], ["content", "Example Text"], ["date", "4/26/2021"], ["created_at", "2021-06-01 00:40:15.862166"], ["updated_at", "2021-06-01 00:40:15.862166"], ["service_name", "Installation"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.4ms)[0m  [1m[32mINSERT INTO "services" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Equipment Installation"], ["description", "Need it installed? We have the tools to complete your intallation qucikly, professionally, and less than our competitor!"], ["created_at", "2021-06-01 00:40:15.873356"], ["updated_at", "2021-06-01 00:40:15.873356"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Customer Service"], ["description", "We aim to provide the best in class customer service experience for our clients."], ["created_at", "2021-06-01 00:40:15.879080"], ["updated_at", "2021-06-01 00:40:15.879080"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.4ms)[0m  [1m[32mINSERT INTO "services" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Repair Service"], ["description", "We offer comprehensive repair services for all your equipment offerings"], ["created_at", "2021-06-01 00:40:15.883565"], ["updated_at", "2021-06-01 00:40:15.883565"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 20:40:24 -0400
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReviewsController#index as HTML
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 7.1ms | ActiveRecord: 0.7ms | Allocations: 7682)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 20:40:31 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.4ms | Allocations: 751)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 20:41:24 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 750)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2021-05-31 20:41:35 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"service_name"=>"", "customer_name"=>"Malik", "content"=>"test", "date"=>"4/1/21", "service"=>"Installation", "review"=>{"customer_name"=>"Malik", "content"=>"test", "date"=>"4/1/21", "service_name"=>""}}
+[31mUnpermitted parameter: :service_name[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (0.7ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_name", "Malik"], ["content", "test"], ["date", "4/1/21"], ["created_at", "2021-06-01 00:41:35.409825"], ["updated_at", "2021-06-01 00:41:35.409825"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 11ms (Views: 1.1ms | ActiveRecord: 2.3ms | Allocations: 2104)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 20:43:22 -0400
+Processing by ReviewsController#index as HTML
+  [1m[36mReview Load (1.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 11.5ms | ActiveRecord: 1.3ms | Allocations: 866)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 20:45:06 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 870)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 20:45:09 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 872)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2021-05-31 20:45:23 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"service_name"=>"Repair", "customer_name"=>"John", "content"=>"test", "date"=>"4/1/21", "review"=>{"customer_name"=>"John", "content"=>"test", "date"=>"4/1/21", "service_name"=>"Repair"}}
+[31mUnpermitted parameter: :service_name[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (0.9ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_name", "John"], ["content", "test"], ["date", "4/1/21"], ["created_at", "2021-06-01 00:45:23.808096"], ["updated_at", "2021-06-01 00:45:23.808096"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 22ms (Views: 0.9ms | ActiveRecord: 2.0ms | Allocations: 1837)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 20:47:06 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.3ms | Allocations: 1008)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 20:48:28 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.2ms | Allocations: 1008)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 20:53:39 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 23ms (Views: 18.0ms | ActiveRecord: 0.8ms | Allocations: 1009)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 20:54:22 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.3ms | Allocations: 1008)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:01:42 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 33ms (Views: 22.3ms | ActiveRecord: 1.6ms | Allocations: 1592)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:08:02 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 35ms (Views: 30.1ms | ActiveRecord: 1.8ms | Allocations: 1589)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:08:08 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 0.1ms | Allocations: 1008)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:11:06 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.4ms | Allocations: 1008)
+
+
+Started DELETE "/reviews/3" for ::1 at 2021-05-31 21:11:07 -0400
+Processing by ReviewsController#destroy as */*
+  Parameters: {"id"=>"3", "customer_name"=>"John", "content"=>"test", "date"=>"4/1/21", "created_at"=>"2021-06-01T00:45:23.808Z", "updated_at"=>"2021-06-01T00:45:23.808Z", "service_name"=>nil, "review"=>{"id"=>"3", "customer_name"=>"John", "content"=>"test", "date"=>"4/1/21", "created_at"=>"2021-06-01T00:45:23.808Z", "updated_at"=>"2021-06-01T00:45:23.808Z", "service_name"=>nil}}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:44:in `set_review'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:38:in `destroy'
+  [1m[36mReview Destroy (0.5ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/reviews_controller.rb:38:in `destroy'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:38:in `destroy'
+Completed 204 No Content in 50ms (ActiveRecord: 3.2ms | Allocations: 3569)
+
+
+Started DELETE "/reviews/2" for ::1 at 2021-05-31 21:11:16 -0400
+Processing by ReviewsController#destroy as */*
+  Parameters: {"id"=>"2", "customer_name"=>"Malik", "content"=>"test", "date"=>"4/1/21", "created_at"=>"2021-06-01T00:41:35.409Z", "updated_at"=>"2021-06-01T00:41:35.409Z", "service_name"=>nil, "review"=>{"id"=>"2", "customer_name"=>"Malik", "content"=>"test", "date"=>"4/1/21", "created_at"=>"2021-06-01T00:41:35.409Z", "updated_at"=>"2021-06-01T00:41:35.409Z", "service_name"=>nil}}
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:44:in `set_review'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:38:in `destroy'
+  [1m[36mReview Destroy (1.0ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/reviews_controller.rb:38:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:38:in `destroy'
+Completed 204 No Content in 9ms (ActiveRecord: 2.2ms | Allocations: 1733)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2021-05-31 21:11:32 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"service_name"=>"", "customer_name"=>"Anika", "content"=>"testin 123", "date"=>"6/7/21", "review"=>{"customer_name"=>"Anika", "content"=>"testin 123", "date"=>"6/7/21", "service_name"=>""}}
+[31mUnpermitted parameter: :service_name[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_name", "Anika"], ["content", "testin 123"], ["date", "6/7/21"], ["created_at", "2021-06-01 01:11:32.439397"], ["updated_at", "2021-06-01 01:11:32.439397"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 5ms (Views: 0.7ms | ActiveRecord: 1.2ms | Allocations: 1822)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:15:22 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 11.5ms | ActiveRecord: 0.6ms | Allocations: 870)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:15:39 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms | Allocations: 870)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2021-05-31 21:16:06 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"service_name"=>"", "customer_name"=>"Julia", "content"=>"test", "date"=>"5/31/21", "review"=>{"customer_name"=>"Julia", "content"=>"test", "date"=>"5/31/21", "service_name"=>""}}
+[31mUnpermitted parameter: :service_name[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (2.4ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_name", "Julia"], ["content", "test"], ["date", "5/31/21"], ["created_at", "2021-06-01 01:16:06.336615"], ["updated_at", "2021-06-01 01:16:06.336615"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 15ms (Views: 1.4ms | ActiveRecord: 4.3ms | Allocations: 1819)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:17:28 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms | Allocations: 1008)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2021-05-31 21:18:38 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"service_name"=>"", "customer_name"=>"Greg", "content"=>"test", "date"=>"5/7/21", "review"=>{"customer_name"=>"Greg", "content"=>"test", "date"=>"5/7/21", "service_name"=>""}}
+[31mUnpermitted parameter: :service_name[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (0.6ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_name", "Greg"], ["content", "test"], ["date", "5/7/21"], ["created_at", "2021-06-01 01:18:38.421679"], ["updated_at", "2021-06-01 01:18:38.421679"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 23ms (Views: 1.8ms | ActiveRecord: 2.3ms | Allocations: 1819)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:21:41 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (1.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 29ms (Views: 24.5ms | ActiveRecord: 1.1ms | Allocations: 1147)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:21:44 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.2ms | Allocations: 1147)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:21:46 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 10.2ms | ActiveRecord: 0.3ms | Allocations: 1147)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:23:15 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.4ms | Allocations: 1147)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:24:49 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 29ms (Views: 25.4ms | ActiveRecord: 0.6ms | Allocations: 1147)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:26:46 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.3ms | Allocations: 1147)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:27:11 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.2ms | Allocations: 1147)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:27:12 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.1ms | Allocations: 1147)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:27:44 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.3ms | Allocations: 1147)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:27:47 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.2ms | Allocations: 1147)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:31:24 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 44ms (Views: 32.0ms | ActiveRecord: 1.0ms | Allocations: 1147)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:31:29 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.2ms | Allocations: 1147)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:31:33 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (6.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 23ms (Views: 16.7ms | ActiveRecord: 6.0ms | Allocations: 1147)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:34:26 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 40ms (Views: 37.1ms | ActiveRecord: 0.6ms | Allocations: 1147)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:34:35 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.2ms | Allocations: 1147)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:35:13 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 101ms (Views: 100.6ms | ActiveRecord: 0.1ms | Allocations: 1148)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:35:15 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1147)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:47:33 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 40ms (Views: 35.2ms | ActiveRecord: 6.8ms | Allocations: 1728)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:47:36 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 1148)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:47:38 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.2ms | Allocations: 1147)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:47:46 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.3ms | Allocations: 1147)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:47:51 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 1147)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:47:56 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (1.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 1.1ms | Allocations: 1147)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:48:02 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.2ms | Allocations: 1147)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:48:10 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.4ms | Allocations: 1147)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:48:13 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.2ms | Allocations: 1147)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:48:15 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.2ms | Allocations: 1147)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-05-31 21:48:16 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1147)
+
+
