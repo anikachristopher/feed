@@ -11,6 +11,7 @@ class ReviewsForm extends Component {
 
 
   state = {
+        service_name: '',
         customer_name: '', 
         content: '',
         date: ''
@@ -31,20 +32,23 @@ class ReviewsForm extends Component {
         return (
           <form onSubmit={this.handleSubmit}>
             <label>Name:</label>
-            <input type='text' value={this.state.customer_name} onChange={this.handleChange} name="customer_name"/>
+            <input type='text' value={this.state.customer_name} onChange={this.handleChange} autocomplete = "off" name="customer_name"/>
             <br />
             <label>Date:</label>
-            <input type='text' value={this.state.date} onChange={this.handleChange} name="date"/>
+            <input type='text' value={this.state.date} onChange={this.handleChange} autocomplete = "off" name="date"/>
             <br />
             <label>Content:</label>
-            <input type='text' value={this.state.content} onChange={this.handleChange} name="content"/>
+            <textarea value={this.state.content} onChange={this.handleChange} autocomplete = "off" name="content"/>
             <br />
             <input type='submit' value="Create Review" />
           </form>
         );
+
   }
 }
 
 export default connect(null, { createReview }) (ReviewsForm);
 
-
+//working
+//logic changed to leaving a review on each page (route). Each route represents a service.
+//not a stateless component
