@@ -15,7 +15,7 @@ const Repairs= () => {
         <div className="w3-card w3-margin w3-margin-top">
         <img src={Logo} alt="ATM" className="image"  width="200" height="300"></img>
             <div className="w3-container w3-white">
-                <h4><b>Package 1-ATM</b></h4>
+                <h4><b>ATM Repair</b></h4>
 
                 <p>Repair Cost - $300</p>
                 <p>Locations: NY, CA, MI, TX </p>
@@ -26,7 +26,7 @@ const Repairs= () => {
         <div className="w3-card w3-margin w3-margin-top">
         <img src={Logo2} alt="CCMAC" className="image"  width="200" height="300"></img>
           <div className="w3-container w3-white">
-              <h4><b>CC Machine</b></h4>
+              <h4><b>CC Machine Repair</b></h4>
 
               <p>RepairCost - $100</p>
               <p>Locations: NY, CA, MI, TX </p>
@@ -37,7 +37,7 @@ const Repairs= () => {
       <div className="w3-card w3-margin w3-margin-top">
       <img src={Logo3} alt="POS" className="image"  width="200" height="300"></img>
             <div className="w3-container w3-white">
-                <h4><b>Package 3 - POS</b></h4>
+                <h4><b>POS Repair</b></h4>
 
                 <p>Repair Cost - $50</p>
                 <p>Locations: NY, CA, MI, TX </p>

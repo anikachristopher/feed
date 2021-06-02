@@ -26,7 +26,7 @@ const Installations= () => {
         <div className="w3-card w3-margin w3-margin-top">
         <img src={Logo2} alt="CCMAC" className="image"  width="200" height="300"></img>
           <div className="w3-container w3-white">
-              <h4><b>CC Machine</b></h4>
+              <h4><b>Package 2 - CC Machine</b></h4>
 
               <p>Average Cost - $500</p>
               <a href="https://nationalbankcard.com/equipment/wireless-terminals/ingenico-iwl255//" target="blank">INGENICO</a>
