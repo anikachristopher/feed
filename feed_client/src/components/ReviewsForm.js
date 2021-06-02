@@ -11,7 +11,7 @@ class ReviewsForm extends Component {
 
 
   state = {
-        service_name: '',
+        item_name: '',
         customer_name: '', 
         content: '',
         date: ''
@@ -33,10 +33,10 @@ class ReviewsForm extends Component {
           <form onSubmit={this.handleSubmit}>
 
           
-          <label>Item:</label>
-          <input type='text' value={this.state.service_name} onChange={this.handleChange} autocomplete = "off" name="service_name"/>
+          <label>Item name:</label>
+          <input type='text' value={this.state.item_name} onChange={this.handleChange} autocomplete = "off" name="item_name"/>
           <br />
-            <label>Name:</label>
+            <label>Customer Name:</label>
             <input type='text' value={this.state.customer_name} onChange={this.handleChange} autocomplete = "off" name="customer_name"/>
             <br />
             <label>Date:</label>

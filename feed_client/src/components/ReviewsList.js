@@ -11,7 +11,7 @@ const ReviewsList = ({ reviews, deleteReview }) => {
             {reviews.map(review => 
                 <ul key={review.id}>
                     <li >
-                        service name:{review.service_name} <br></br>
+                        item name:{review.item_name} <br></br>
                         customer name:{review.customer_name} <br></br>
                         date: {review.date} <br></br>
                         content: {review.content} 
