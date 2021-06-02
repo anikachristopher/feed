@@ -6438,3 +6438,315 @@ Processing by ReviewsController#index as */*
 Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 732)
 
 
+Started GET "/reviews" for 127.0.0.1 at 2021-06-02 00:55:22 -0400
+Processing by ReviewsController#index as */*
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 24ms (Views: 18.7ms | ActiveRecord: 2.4ms | Allocations: 1313)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2021-06-02 00:56:29 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"service_name"=>"test", "customer_name"=>"anika", "content"=>"test", "date"=>"4/21/21", "review"=>{"customer_name"=>"anika", "content"=>"test", "date"=>"4/21/21", "service_name"=>"test"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (2.2ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at", "service_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["customer_name", "anika"], ["content", "test"], ["date", "4/21/21"], ["created_at", "2021-06-02 04:56:29.639069"], ["updated_at", "2021-06-02 04:56:29.639069"], ["service_name", "test"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 11ms (Views: 1.0ms | ActiveRecord: 2.9ms | Allocations: 1814)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-06-02 00:57:14 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 877)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2021-06-02 00:57:26 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"item_name"=>"test", "customer_name"=>"anika", "content"=>"test", "date"=>"5/2/21", "review"=>{"customer_name"=>"anika", "content"=>"test", "date"=>"5/2/21"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (1.1ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_name", "anika"], ["content", "test"], ["date", "5/2/21"], ["created_at", "2021-06-02 04:57:26.127064"], ["updated_at", "2021-06-02 04:57:26.127064"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 13ms (Views: 1.2ms | ActiveRecord: 2.6ms | Allocations: 1792)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveServiceNameFromReviews (20210602050251)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TEMPORARY TABLE "areviews" ("id" integer NOT NULL PRIMARY KEY, "customer_name" varchar DEFAULT NULL, "content" varchar DEFAULT NULL, "date" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "service_name" varchar DEFAULT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "areviews" ("id","customer_name","content","date","created_at","updated_at","service_name")
+                     SELECT "id","customer_name","content","date","created_at","updated_at","service_name" FROM "reviews"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE "reviews"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" integer NOT NULL PRIMARY KEY, "customer_name" varchar DEFAULT NULL, "content" varchar DEFAULT NULL, "date" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "reviews" ("id","customer_name","content","date","created_at","updated_at")
+                     SELECT "id","customer_name","content","date","created_at","updated_at" FROM "areviews"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "areviews"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210602050251"]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddItemNameToReviews (20210602050355)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "reviews" ADD "item_name" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210602050355"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/reviews" for 127.0.0.1 at 2021-06-02 01:04:58 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 6.8ms | ActiveRecord: 0.9ms | Allocations: 8013)
+
+
+Started DELETE "/reviews/16" for ::1 at 2021-06-02 01:05:01 -0400
+Processing by ReviewsController#destroy as */*
+  Parameters: {"id"=>"16", "customer_name"=>"anika", "content"=>"test", "date"=>"5/2/21", "created_at"=>"2021-06-02T04:57:26.127Z", "updated_at"=>"2021-06-02T04:57:26.127Z", "item_name"=>nil, "review"=>{"id"=>"16", "customer_name"=>"anika", "content"=>"test", "date"=>"5/2/21", "created_at"=>"2021-06-02T04:57:26.127Z", "updated_at"=>"2021-06-02T04:57:26.127Z", "item_name"=>nil}}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:44:in `set_review'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:38:in `destroy'
+  [1m[36mReview Destroy (0.5ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = ?[0m  [["id", 16]]
+  ↳ app/controllers/reviews_controller.rb:38:in `destroy'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:38:in `destroy'
+Completed 204 No Content in 10ms (ActiveRecord: 1.7ms | Allocations: 2237)
+
+
+Started DELETE "/reviews/15" for ::1 at 2021-06-02 01:05:02 -0400
+Processing by ReviewsController#destroy as */*
+  Parameters: {"id"=>"15", "customer_name"=>"anika", "content"=>"test", "date"=>"4/21/21", "created_at"=>"2021-06-02T04:56:29.639Z", "updated_at"=>"2021-06-02T04:56:29.639Z", "item_name"=>nil, "review"=>{"id"=>"15", "customer_name"=>"anika", "content"=>"test", "date"=>"4/21/21", "created_at"=>"2021-06-02T04:56:29.639Z", "updated_at"=>"2021-06-02T04:56:29.639Z", "item_name"=>nil}}
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:44:in `set_review'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:38:in `destroy'
+  [1m[36mReview Destroy (0.3ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = ?[0m  [["id", 15]]
+  ↳ app/controllers/reviews_controller.rb:38:in `destroy'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:38:in `destroy'
+Completed 204 No Content in 6ms (ActiveRecord: 2.6ms | Allocations: 1752)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2021-06-02 01:05:17 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"item_name"=>"test", "customer_name"=>"anika", "content"=>"test", "date"=>"4/3/21", "review"=>{"customer_name"=>"anika", "content"=>"test", "date"=>"4/3/21", "item_name"=>"test"}}
+[31mUnpermitted parameter: :item_name[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_name", "anika"], ["content", "test"], ["date", "4/3/21"], ["created_at", "2021-06-02 05:05:17.953837"], ["updated_at", "2021-06-02 05:05:17.953837"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 11ms (Views: 1.1ms | ActiveRecord: 1.8ms | Allocations: 2067)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-06-02 01:06:06 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 881)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-06-02 01:06:21 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 863)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2021-06-02 01:06:34 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"item_name"=>"test", "customer_name"=>"test", "content"=>"test", "date"=>"4/2/21", "review"=>{"customer_name"=>"test", "content"=>"test", "date"=>"4/2/21", "item_name"=>"test"}}
+[31mUnpermitted parameter: :item_name[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["customer_name", "test"], ["content", "test"], ["date", "4/2/21"], ["created_at", "2021-06-02 05:06:34.840643"], ["updated_at", "2021-06-02 05:06:34.840643"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 10ms (Views: 0.5ms | ActiveRecord: 1.5ms | Allocations: 1825)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateServices (20210516200533)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "services" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "cost" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210516200533"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateReviews (20210516200623)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "customer_name" varchar, "content" varchar, "date" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210516200623"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to RemoveCostFromServices (20210531133939)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aservices" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "description" varchar DEFAULT NULL, "cost" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aservices" ("id","name","description","cost","created_at","updated_at")
+                     SELECT "id","name","description","cost","created_at","updated_at" FROM "services"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "services"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "services" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "description" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "services" ("id","name","description","created_at","updated_at")
+                     SELECT "id","name","description","created_at","updated_at" FROM "aservices"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aservices"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210531133939"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddServiceToReviews (20210601000847)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "reviews" ADD "service" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210601000847"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to RemoveServiceFromReviews (20210601003806)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "areviews" ("id" integer NOT NULL PRIMARY KEY, "customer_name" varchar DEFAULT NULL, "content" varchar DEFAULT NULL, "date" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "service" varchar DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "areviews" ("id","customer_name","content","date","created_at","updated_at","service")
+                     SELECT "id","customer_name","content","date","created_at","updated_at","service" FROM "reviews"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "reviews"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" integer NOT NULL PRIMARY KEY, "customer_name" varchar DEFAULT NULL, "content" varchar DEFAULT NULL, "date" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "reviews" ("id","customer_name","content","date","created_at","updated_at")
+                     SELECT "id","customer_name","content","date","created_at","updated_at" FROM "areviews"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "areviews"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210601003806"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddServiceNameToReviews (20210601003945)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "reviews" ADD "service_name" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210601003945"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to RemoveServiceNameFromReviews (20210602050251)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "areviews" ("id" integer NOT NULL PRIMARY KEY, "customer_name" varchar DEFAULT NULL, "content" varchar DEFAULT NULL, "date" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "service_name" varchar DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "areviews" ("id","customer_name","content","date","created_at","updated_at","service_name")
+                     SELECT "id","customer_name","content","date","created_at","updated_at","service_name" FROM "reviews"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "reviews"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" integer NOT NULL PRIMARY KEY, "customer_name" varchar DEFAULT NULL, "content" varchar DEFAULT NULL, "date" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "reviews" ("id","customer_name","content","date","created_at","updated_at")
+                     SELECT "id","customer_name","content","date","created_at","updated_at" FROM "areviews"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "areviews"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210602050251"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddItemNameToReviews (20210602050355)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "reviews" ADD "item_name" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210602050355"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-06-02 05:12:02.222064"], ["updated_at", "2021-06-02 05:12:02.222064"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/reviews" for 127.0.0.1 at 2021-06-02 01:12:21 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 3182)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at", "item_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["customer_name", "Mary"], ["content", "Example Text"], ["date", "4/26/2021"], ["created_at", "2021-06-02 05:12:44.583612"], ["updated_at", "2021-06-02 05:12:44.583612"], ["item_name", "Installation"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Equipment Installation"], ["description", "Need it installed? We have the tools to complete your intallation qucikly, professionally, and less than our competitor!"], ["created_at", "2021-06-02 05:12:44.590917"], ["updated_at", "2021-06-02 05:12:44.590917"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Customer Service"], ["description", "We aim to provide the best in class customer service experience for our clients."], ["created_at", "2021-06-02 05:12:44.594390"], ["updated_at", "2021-06-02 05:12:44.594390"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Repair Service"], ["description", "We offer comprehensive repair services for all your equipment offerings"], ["created_at", "2021-06-02 05:12:44.598441"], ["updated_at", "2021-06-02 05:12:44.598441"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/reviews" for 127.0.0.1 at 2021-06-02 01:13:31 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 6.8ms | ActiveRecord: 1.0ms | Allocations: 7733)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2021-06-02 01:13:48 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"item_name"=>"test", "customer_name"=>"Anika", "content"=>"test", "date"=>"3/2/21", "review"=>{"customer_name"=>"Anika", "content"=>"test", "date"=>"3/2/21", "item_name"=>"test"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (0.6ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at", "item_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["customer_name", "Anika"], ["content", "test"], ["date", "3/2/21"], ["created_at", "2021-06-02 05:13:48.934250"], ["updated_at", "2021-06-02 05:13:48.934250"], ["item_name", "test"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 9ms (Views: 1.2ms | ActiveRecord: 1.8ms | Allocations: 2101)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-06-02 01:16:10 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.7ms | Allocations: 895)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2021-06-02 01:16:31 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"item_name"=>"POS", "customer_name"=>"Koffi", "content"=>"test", "date"=>"4/21/21", "review"=>{"customer_name"=>"Koffi", "content"=>"test", "date"=>"4/21/21", "item_name"=>"POS"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mReview Create (0.7ms)[0m  [1m[32mINSERT INTO "reviews" ("customer_name", "content", "date", "created_at", "updated_at", "item_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["customer_name", "Koffi"], ["content", "test"], ["date", "4/21/21"], ["created_at", "2021-06-02 05:16:31.813396"], ["updated_at", "2021-06-02 05:16:31.813396"], ["item_name", "POS"]]
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `create'
+Completed 201 Created in 7ms (Views: 0.5ms | ActiveRecord: 1.9ms | Allocations: 1832)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-06-02 01:17:14 -0400
+Processing by ReviewsController#index as */*
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/controllers/reviews_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 1040)
+
+
