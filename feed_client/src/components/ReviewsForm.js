@@ -31,6 +31,11 @@ class ReviewsForm extends Component {
     render() {
         return (
           <form onSubmit={this.handleSubmit}>
+
+          
+          <label>Item:</label>
+          <input type='text' value={this.state.service_name} onChange={this.handleChange} autocomplete = "off" name="service_name"/>
+          <br />
             <label>Name:</label>
             <input type='text' value={this.state.customer_name} onChange={this.handleChange} autocomplete = "off" name="customer_name"/>
             <br />

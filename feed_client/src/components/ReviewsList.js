@@ -1,15 +1,10 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {deleteReview} from '../actions/reviewsActions';
+import ReviewsContainer from '../Containers/ReviewsContainer'
 
 const ReviewsList = ({ reviews, deleteReview }) => {
-    // const [list, setList] = React.useState(ReviewsList);
- 
-//   function deleteReview(id) {
-//     const ReviewsList = list.filter((review) => review.id !== id);
- 
-//     setList(ReviewsList);
-//   }
+
         return (
             <div>
             <h1>All Reviews:</h1>
@@ -26,6 +21,7 @@ const ReviewsList = ({ reviews, deleteReview }) => {
                 </ul>
             
         )}
+        <ReviewsContainer />
         </div>
         );
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 
 import { getAllReviews } from '../actions/reviewsActions'
-import ReviewsForm from './ReviewsForm'
+import ReviewsForm from '../components/ReviewsForm'
 
 
 //create form and mount it here
