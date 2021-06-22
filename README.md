@@ -11,7 +11,7 @@ Navigate:
 
     $ cd feed_api
 
-Install Dependicies:
+Install Dependencies:
 
     $ bundle install
 
@@ -23,7 +23,7 @@ Start backend-rails server:
 
     $ rails s 
 
-Naviagte:
+Navigate:
 
     $ cd feed_client
 
